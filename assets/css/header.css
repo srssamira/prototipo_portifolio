@@ -1,0 +1,72 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.headertext {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.apresentacao {
+    text-align: center;
+    font-family: 'Neue Machina';
+    display: flex;
+    flex-direction: column;
+}
+
+.informacoes p::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 1rem;
+}
+
+.informacoes .job::before {
+    background-image: url(/assets/icones/job.svg);
+}
+
+.informacoes .email::before {
+    background-image: url(/assets/icones/email.svg);
+}
+
+.informacoes .location::before {
+    background-image: url(/assets/icones/location.svg);
+}
+
+.informacoes .phone::before {
+    background-image: url(/assets/icones/phone.svg);
+}
+
+.informacoes p {
+    font-size: 1.125rem;
+    display: flex;
+    margin: 0.5rem;
+    align-items: center;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+@media only screen and(min-width: 768px){
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
